@@ -582,6 +582,14 @@ a { text-decoration: none; }
   margin-bottom: 18px;
 }
 .svc-featured .svc-icon { background: rgba(255,255,255,.18); color: var(--white); }
+.svc-icon-wheel {
+  font-size: 2rem;
+  color: var(--saffron);
+  animation: spinWheel 20s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .svc-card h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.25rem;
