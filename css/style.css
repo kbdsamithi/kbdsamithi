@@ -231,6 +231,28 @@ a { text-decoration: none; }
   z-index: 2;
   padding: 100px 20px 60px;
 }
+/* Hero three-column layout: [Buddha] [Chakra] [God] */
+.hero-trio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+.hero-side-img-wrap {
+  flex-shrink: 0;
+  width: 150px;
+}
+.hero-side-img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 12px;
+  border: 3px solid var(--gold);
+  box-shadow: 0 0 25px rgba(212,175,55,.4);
+}
+
 .hero-wheel {
   font-size: 10rem;
   color: var(--gold);
@@ -909,6 +931,9 @@ a { text-decoration: none; }
   .contact-form-card { padding: 22px 16px; }
 }
 @media (max-width: 480px) {
-  .hero-wheel { font-size: 6rem; }
+  .hero-wheel { font-size: 5rem; }
+  .hero-side-img-wrap { width: 75px; }
+  .hero-trio { gap: 10px; }
   .stat-num { font-size: 2rem; }
+  .hero-side-img { border-width: 2px; }
 }
