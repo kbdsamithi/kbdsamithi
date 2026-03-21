@@ -207,6 +207,7 @@ a { text-decoration: none; }
    ========================================= */
 .hero-section {
   min-height: 100vh;
+  min-height: 100dvh;
   position: relative;
   display: flex;
   align-items: center;
@@ -231,7 +232,7 @@ a { text-decoration: none; }
   padding: 100px 20px 60px;
 }
 .hero-wheel {
-  font-size: 5.5rem;
+  font-size: 10rem;
   color: var(--gold);
   display: inline-block;
   animation: spinWheel 20s linear infinite;
@@ -886,6 +887,17 @@ a { text-decoration: none; }
 @media (max-width: 991px) {
   .sec-pad { padding: 70px 0; }
   .donate-cta { padding: 30px; }
+
+  /* Force dark background on mobile navbar collapse — matches desktop dark theme */
+  #mainNav {
+    background: rgba(26,10,0,.97) !important;
+  }
+  .navbar-collapse {
+    background: rgba(26,10,0,.97);
+    padding: 12px 16px 16px;
+    border-radius: 0 0 10px 10px;
+    margin-top: 4px;
+  }
 }
 @media (max-width: 767px) {
   .sec-title { font-size: 1.75rem; }
@@ -897,6 +909,6 @@ a { text-decoration: none; }
   .contact-form-card { padding: 22px 16px; }
 }
 @media (max-width: 480px) {
-  .hero-wheel { font-size: 3.5rem; }
+  .hero-wheel { font-size: 6rem; }
   .stat-num { font-size: 2rem; }
 }
