@@ -1,5 +1,5 @@
 /* =========================================
-   Karnatak Buddha Dhamma Samithi – main.js
+   KarnatakaBuddha Dhamma Samithi – main.js
    =========================================
    HOW TO ADD REAL MEMBERS:
    Option A (Simple): Edit the `MEMBERS_LOCAL` array below.
